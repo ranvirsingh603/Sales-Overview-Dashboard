@@ -26,7 +26,7 @@ Over a rigorous **9-day data engineering pipeline process**, I executed a compre
 ## 📊 Analytics Architecture & Dashboard Blueprint
 The dashboard follows an intentional, top-down UI/UX reporting framework designed for fast executive decision-making.
 
-![Sales Dashboard](Sales Overview Dashboard Screenshot.jpg)
+![Sales Dashboard](https://github.com/ranvirsingh603/Sales-Overview-Dashboard/blob/main/Sales%20Overview%20Dashboard%20Screenshot.png)
 
 ### 1. Executive Headline KPIs
 * **Total Volume Hub:** Real-time visibility into the complete active pipeline ecosystem (389 Total Leads).
@@ -48,16 +48,34 @@ Based on the patterns uncovered by this dashboard asset, management can execute 
 ---
 
 ## 📂 Project Repository Directory
+
 ```text
-📁 Sales-Performance-Analytics/
+├── Leads Stage.csv
+│   └── Unified, anonymized relational source table (389 rows)
 │
-├── 📁 data/
-│   └──Leads Stage.csv       <-- Unified, anonymized relational source table (389 rows)
+├── Sales Overview Dashboard.pbix
+│   └── Production-ready Power BI Desktop file
 │
-├── 📁 dashboard/
-│   └── Sales Overview Dashboard.pbix    <-- Production-ready Power BI / Desktop file
+├── Sales Overview Dashboard Screenshot.jpg
+│   └── Full-resolution dashboard interface screenshot
 │
-├── 📁 images/
-│   └── Sales Overview Dashboard Screenshot.jpg     <-- Full-resolution dashboard interface screenshot
-│
-└── 📄 README.md                         <-- Project documentation & case study
+└── README.md
+    └── Project documentation & case study
+```
+
+---
+
+## ⚙️ Local Deployment & Replication Instructions
+
+To interact with or review the engineering mechanics behind this business intelligence file:
+
+1. Download or clone this repository to your local workspace.
+2. Download both the `.pbix` file and the source `.csv` file.
+3. Open the `.pbix` file using Power BI Desktop.
+4. Resolve Data Source Paths:
+
+   * If a local file path error displays, navigate to:
+     `Home → Transform Data → Data Source Settings`
+   * Select **Change Source**
+   * Re-point the file path to your local copy of:
+     `NBD Leads Stage Github.csv`
